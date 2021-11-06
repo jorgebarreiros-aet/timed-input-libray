@@ -1,3 +1,5 @@
+//  src/stratio.extendedShell.groovy
+
 package stratio
 
 def tssh(command){
@@ -9,3 +11,6 @@ def tssh(command){
 	echo commandOutput
 	}
 
+def extendedShellVersion(){
+	return '1.0'
+}
