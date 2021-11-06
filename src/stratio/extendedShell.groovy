@@ -1,9 +1,9 @@
 package stratio
 
-def tssh(command-to-run){
+def tssh(command){
 	def commandOutput
 	timestamps {
-		commandOutput = sh(script: "${<command-to-run>}",
+		commandOutput = sh(script: "${<command>}",
 		returnStdout: true).trim()
 	}	
 	echo commandOutput
