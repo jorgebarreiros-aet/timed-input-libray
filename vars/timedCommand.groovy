@@ -14,7 +14,12 @@ def getOutput() {
 cmdOut
 }
 
-def call (String cmd) {
+def call (String cmd, String logFilePath) {
 timestamps {
-cmdOutput = echo sh (script:"${cmd}", returnStdout:true).trim()
+cmdOutput = sh (script:"${cmd}", returnStdout:true).trim()
+}
+echo cmdOutput
+writeFile file: "${logFilePath}", text: "${cmdOutput}"
+}
+
 }
