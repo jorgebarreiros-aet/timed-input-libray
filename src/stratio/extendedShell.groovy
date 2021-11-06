@@ -5,7 +5,7 @@ def steps
 
 extendedShell(steps){this.steps=steps}
 
-def tssh(command-to-run){
+tssh(command-to-run){
 	def commandOutput
 	steps.timestamps {
 		commandOutput = steps.sh(script: "${<command-to-run>}",
