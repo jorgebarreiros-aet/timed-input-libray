@@ -2,6 +2,8 @@
 
 package stratio
 
+const String VERSION='1.0'
+
 def tssh(command){
 	def commandOutput
 	timestamps {
@@ -11,6 +13,8 @@ def tssh(command){
 	echo commandOutput
 	}
 
-def extendedShellVersion(){
-	return '1.0'
+def version() {return VERSION}
+
+static def extendedShellVersion(){
+	return VERSION
 }
