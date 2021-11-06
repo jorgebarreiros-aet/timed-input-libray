@@ -22,4 +22,3 @@ echo cmdOutput
 writeFile file: "${logFilePath}", text: "${cmdOutput}"
 }
 
-}
