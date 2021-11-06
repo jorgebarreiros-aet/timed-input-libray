@@ -1,12 +1,16 @@
 package stratio
 
 class extendedShell implements Serializable{
+def steps
+
+extendedShell(steps){this.steps=steps}
+
 def tssh(command-to-run){
 	def commandOutput
-	timestamps {
-		commandOutput = sh(script: "${<command-to-run>}",
+	steps.timestamps {
+		commandOutput = steps.sh(script: "${<command-to-run>}",
 		returnStdout: true).trim()
 	}	
-	echo commandOutput
+	steps.echo commandOutput
 }
 }
