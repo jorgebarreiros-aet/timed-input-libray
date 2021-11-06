@@ -2,7 +2,6 @@
 
 package stratio
 
-def VERSION_NUMBER='1.0'
 
 def tssh(command){
 	def commandOutput
@@ -13,8 +12,8 @@ def tssh(command){
 	echo commandOutput
 	}
 
-def version() {return VERSION_NUMBER}
+def version() {return '1.0'}
 
 static def extendedShellVersion(){
-	return VERSION_NUMBER
+	return '1.0'
 }
