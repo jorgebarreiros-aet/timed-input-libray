@@ -1,5 +1,6 @@
 package stratio
 
+class extendedShell implements Serializable{
 def tssh(command-to-run){
 	def commandOutput
 	timestamps {
@@ -7,4 +8,5 @@ def tssh(command-to-run){
 		returnStdout: true).trim()
 	}	
 	echo commandOutput
+}
 }
