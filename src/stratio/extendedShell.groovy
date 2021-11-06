@@ -2,7 +2,7 @@
 
 package stratio
 
-const String VERSION='1.0'
+def VERSION='1.0'
 
 def tssh(command){
 	def commandOutput
