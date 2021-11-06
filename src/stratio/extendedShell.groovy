@@ -2,7 +2,6 @@
 
 package stratio
 
-
 def tssh(command){
 	def commandOutput
 	timestamps {
