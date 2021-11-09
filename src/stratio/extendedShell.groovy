@@ -1,4 +1,4 @@
-//  src/stratio.extendedShell.groovy
+//  src/stratio/extendedShell.groovy
 
 package stratio
 
